@@ -15,14 +15,44 @@ html, body, h1, #wrapper {
   	display: flex;
   	align-items: center;
   	justify-content: center;
-  	
+
 }
 
+#me {
+	height: 100%;
+	width: 100%;
+	background-image:url("../img/myself.jpg"); 
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: absolute;
+
+}
+
+#about-me-text {
+	padding-top: 8%;
+	padding-right: 20px;
+	color: #f7f7f7;
+	font-size: 35px;
+	line-height: 50px;
+	font-family: menlo;
+	text-align: right;
+}
+
+#contact-text {
+
+	position: absolute;
+	font-size: 30px;
+	color: #7fc930;
+}
 #text{
   	color: #f7f7f7;
 	font-family: menlo;
 	z-index: 100;
 	position: relative;
+}
+strong {
+	color: #7fc930
 }
 
 /* DEMO-SPECIFIC STYLES */
