@@ -1,11 +1,21 @@
 <!doctype html>
 <html>
 	<head>
-		<title>particles.js</title>
+		<title>Tanvir Pathan</title>
 		<link rel="stylesheet" media="screen" href="styles/main.css">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/smoothscroll.js"></script>
 		<link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+		<style type="text/css">
+            dummydeclaration { padding-left: 4em; } /* Firefox ignores first declaration for some reason */
+            tab2 { padding-left: 3em; }
+            tab1 { padding-left: 6em; }
+            tab3 { padding-left: 9em; }
+            tab4 { padding-left: 16em; }
+            jsonColor { color: #f24383; }
+            jsonTitle { color: #64bafc; }
+
+        </style>
 
 	</head>
 	<body>
@@ -19,9 +29,41 @@
 		<div id="particles-js"></div>
 	</div>
 	<div id="me">
-		<div id="about-me-text">
-			<strong>Welcome!</strong> I am currently specializing <br>in Electrical Engineering <br>while pursuing a Bachelor of Applied <br> Science degree at the University of Waterloo.<br> Scroll down to see some my interests,<br> skill sets and click here to see my <a href="resume.pdf" style="text-decoration: none"><strong>resume</strong></a>.<br> Feel free to contact me and <br>thank-you for visiting this site!
+		<div class="about-me-text">
+			<strong>Welcome!</strong><br> I am currently specializing <br>in Electrical Engineering <br>while pursuing a BASc <br> degree at the University of Waterloo.<br> Scroll down to see a quick summary of <br>my experiences, skill sets <br>and click here to see my<br> <a href="resume.pdf" style="text-decoration: none"><strong>resume</strong></a>.
 		</div>
+	</div>
+	<div id="experiences">
+		<div class="section-title"> experience<strong> / </strong>projects</div>
+	<!-- bazaarvoice -->
+		<div class="experiences-text"><jsonTitle>bazaarvoice:</jsonTitle> { <br>
+		<tab2><jsonColor>location:</jsonColor> Austin, TX <br></tab2>
+		<tab2><jsonColor>date:</jsonColor> Sept 2016 - Dec 2016 <br></tab2>
+		<tab2><jsonColor>position:</jsonColor> Software Automation Developer <br></tab2>
+		<tab2><jsonColor>project-site: </jsonColor><a href="https://github.com/bazaarvoice/cordova-plugin-bvsdk" style="text-decoration: none"><strong>bazaarvoice/cordova-plugin-bvsdk</strong></a><br></tab2>
+		}</div>
+
+	<!-- connected labs -->
+		<div class="experiences-text"><jsonTitle>connected labs:</jsonTitle> { <br>
+		<tab2><jsonColor>location:</jsonColor> Toronto, ON <br></tab2>
+		<tab2><jsonColor>date:</jsonColor> Jan 2016 - Apr 2016 <br></tab2>
+		<tab2><jsonColor>position:</jsonColor> Quality Assurance Engineer <br></tab2>
+		}</div>
+
+	<!-- Obero Solutions -->
+		<div class="experiences-text"><jsonTitle>obero solutions:</jsonTitle> { <br>
+		<tab2><jsonColor>location:</jsonColor> Vaughan, ON <br></tab2>
+		<tab2><jsonColor>date:</jsonColor> Mar 2015 - Aug 2015 <br></tab2>
+		<tab2><jsonColor>position:</jsonColor> Quality Assurance Manager <br></tab2>
+		}</div>
+
+	<!-- Bop-it! -->
+		<div class="experiences-text"><jsonTitle>bop-it!:</jsonTitle> { <br>
+		<tab2><jsonColor>date:</jsonColor> Jan 2016 - May 2016 <br></tab2>
+		<tab2><jsonColor>position:</jsonColor> Game Development <br></tab2>
+		<tab2><jsonColor>project-site: </jsonColor><a href="https://github.com/tanvirpathan/Bop-it" style="text-decoration: none"><strong>tanvirpathan/Bop-it</strong></a><br></tab2>
+		}</div>
+	<div id="particles-js"></div>
 	</div>
 
 	<script src="../particles.js"></script>
