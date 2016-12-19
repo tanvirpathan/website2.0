@@ -1,4 +1,4 @@
-html, body, h1, #something, #wrapper {
+html, body, h1, #something, #wrapper, #somethingelse {
 	height: 100%;
 	width: 100%;
 	padding: 0;
@@ -26,19 +26,15 @@ html, body, h1, #something, #wrapper {
   	padding-top: 20px;
   	color: #f7f7f7;
   	letter-spacing: 5px;
+  	z-index: 100;
 }
 #me {
-/*	display: table;
-*/	height: 100%;
+	height: 100%;
 	width: 100%;
 	background-image:url("../img/myself.jpg"); 
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-
-  	
-/*	position: absolute;*/
-
 }
 
 .about-me-text {
@@ -51,9 +47,9 @@ html, body, h1, #something, #wrapper {
 	text-align: right;
 	width: 50%;
 	float: right;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
 
 }
 
@@ -61,11 +57,14 @@ html, body, h1, #something, #wrapper {
 	min-height: 100%;
 	width: 100%;
 	background-color: #212121;
+	
+	margin: 0;
 	text-align: center;
-	margin: 0 auto 1em auto;
+	z-index: 100;
+	padding-bottom: 20px;
 }
 .experiences-text {
-	
+
   	text-align: left;
 	padding-top: 3%;
 	padding-left: 30px;
@@ -73,8 +72,9 @@ html, body, h1, #something, #wrapper {
 	font-size: 20px;
 	line-height: 40px;
 	font-family: menlo;
-
-
+	margin: 0 auto;
+	width: 600px;
+	z-index: 100;
 	
 }
 #contact-text {
@@ -83,8 +83,20 @@ html, body, h1, #something, #wrapper {
 	font-size: 30px;
 	color: #7fc930;
 	text-align: center;
-	bottom: 50px;
+	bottom: 120px;
+	z-index: 100;
 }
+.icon {
+	
+	position: relative;
+	font-size: 30px;
+	color: #f7f7f7;
+	text-align: center;
+	letter-spacing: 17px;
+	top: 270px;
+	z-index: 100;
+}
+
 #text{
   	color: #f7f7f7;
 	font-family: menlo;
@@ -130,7 +142,19 @@ strong {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -100;
+	
+}
+#particles-js2 {
+	width: 100%;
+	height: 100%;
+	background-color: #212121;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
 }
 
 

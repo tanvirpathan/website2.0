@@ -13,30 +13,43 @@
             tab3 { padding-left: 9em; }
             tab4 { padding-left: 16em; }
             jsonColor { color: #f24383; }
-            jsonTitle { color: #64bafc; }
+            jsonTitle { color: #64bafc; font-weight: bold;}
 
         </style>
 
 	</head>
 	<body>
-<div id="something">
-	<div id="wrapper">
-		<div id="text" class="typewriter">
-			<h1>hi! i'm tanvir</h1>
+	<div id="something">
+			<div style="  	position: relative;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;">
+			<a class="icon" href="https://twitter.com/spidertan" class="smoothScroll"><i style="color: #00aced;" class="fa fa-twitter"></i></a>
+			<a class="icon" href="https://www.facebook.com/tanvir.pathan.180" class="smoothScroll"><i style="color: #3b5998;" class="fa fa-facebook"></i></a>
+			<a class="icon" href="https://www.github.com/tanvirpathan" class="smoothScroll"><i class="fa fa-github"></i></a>
+			<a class="icon" href="https://www.linkedin.com/in/tanpat" class="smoothScroll"><i style="color: #007bb6;" class="fa fa-linkedin"></i></a>
+			<a class="icon" href="mailto:tanpat13@gmail.com" class="smoothScroll"><i class="fa fa-envelope-o"></i></a>
+
+		</div>
+		<div id="wrapper">
+			<div id="text" class="typewriter">
+				<h1>hi! i'm tanvir</h1>
+			</div>
+			
 		</div>
 
+		<a id="contact-text" href="#me" class="smoothScroll"><i class="fa fa-arrow-down"></i></a>
 
 		
-	</div>	
-			<a id="contact-text" href="#me" class="smoothScroll"><i class="fa fa-arrow-down"></i></a>
-			<div id="particles-js"></div>
-</div>
-
+		<div id="particles-js2"></div>
+	</div>
 	<div id="me">
 		<div class="about-me-text" >
-			<strong>Welcome!</strong> I am currently specializing in Electrical Engineering while pursuing a BASc degree at the University of Waterloo. Scroll down to see a quick summary of my experiences, skill sets and click here to see my <a href="resume.pdf" style="text-decoration: none"><strong>resume</strong></a>.
+			<strong>Welcome!</strong> I am currently specializing in Electrical Engineering while pursuing a BASc degree at the University of Waterloo. Scroll down to see a quick summary of my experiences, projects and click <a href="resume.pdf" style="text-decoration: none"><strong>here</strong></a> to see my resume for more details!
+			
 		</div>
 	</div>
+
 	<div id="experiences">
 		<div class="section-title"> experience<strong> / </strong>projects</div>
 	<!-- bazaarvoice -->
@@ -48,17 +61,24 @@
 		}</div>
 
 	<!-- connected labs -->
-		<div class="experiences-text"><jsonTitle>connected labs:</jsonTitle> { <br>
+		<div class="experiences-text"><jsonTitle>connected_labs:</jsonTitle> { <br>
 		<tab2><jsonColor>location:</jsonColor> Toronto, ON <br></tab2>
 		<tab2><jsonColor>date:</jsonColor> Jan 2016 - Apr 2016 <br></tab2>
 		<tab2><jsonColor>position:</jsonColor> Quality Assurance Engineer <br></tab2>
 		}</div>
 
 	<!-- Obero Solutions -->
-		<div class="experiences-text"><jsonTitle>obero solutions:</jsonTitle> { <br>
+		<div class="experiences-text"><jsonTitle>obero_solutions:</jsonTitle> { <br>
 		<tab2><jsonColor>location:</jsonColor> Vaughan, ON <br></tab2>
 		<tab2><jsonColor>date:</jsonColor> Mar 2015 - Aug 2015 <br></tab2>
 		<tab2><jsonColor>position:</jsonColor> Quality Assurance Manager <br></tab2>
+		}</div>
+
+	<!-- Website -->
+		<div class="experiences-text"><jsonTitle>personal_website:</jsonTitle> { <br>
+		<tab2><jsonColor>date:</jsonColor> Dec 2016 <br></tab2>
+		<tab2><jsonColor>position:</jsonColor> Web Development <br></tab2>
+		<tab2><jsonColor>project-site: </jsonColor><a href="https://github.com/tanvirpathan/website2.0" style="text-decoration: none"><strong>tanvirpathan/website2.0</strong></a><br></tab2>
 		}</div>
 
 	<!-- Bop-it! -->
@@ -67,6 +87,7 @@
 		<tab2><jsonColor>position:</jsonColor> Game Development <br></tab2>
 		<tab2><jsonColor>project-site: </jsonColor><a href="https://github.com/tanvirpathan/Bop-it" style="text-decoration: none"><strong>tanvirpathan/Bop-it</strong></a><br></tab2>
 		}</div>
+		
 	</div>
 
 	<script src="../particles.js"></script>
