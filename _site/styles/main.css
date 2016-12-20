@@ -59,10 +59,8 @@ html, body, h1, #something, #wrapper, #somethingelse {
 	width: 100%;
 	background-color: #212121;
 	margin: 0;
-	text-align: center;
-	z-index: 100;
-	padding-bottom: 20px;
-	position: relative; display: flex; align-items: center;justify-content: center;
+/*	text-align: center;
+*/	z-index: 100;
 }
 .experiences-text {
 
@@ -106,6 +104,20 @@ html, body, h1, #something, #wrapper, #somethingelse {
 }
 strong {
 	color: #7fc930
+}
+.cell-flex {
+	display: flex; width: 100%; height: 400px;  flex-wrap: wrap; background-color: #212121;
+}
+.cell {
+	flex: 1 0 33%; height: 100%; padding-bottom: 30px; background-color: #212121;
+}
+.cell div {
+	margin: 20px; 
+	border-radius: 25px; 
+	background:cover; 
+	height: 100%;
+	background-repeat: no-repeat;
+
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -158,15 +170,39 @@ strong {
 	z-index: -100;
 	
 }
+
+/*Phones*/
 @media only screen 
-and (min-device-width : 320px) 
+and (min-device-width : 500px) 
 and (max-device-width : 750px) 
 and (orientation : landscape) { 
 	#about-me-text {
 		font-size: 25px;
 		line-height: 30px;
 	}
+	.cell {
+		flex:1 0 100%;
+	}
 }
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 420px) 
+and (orientation : portrait) { 
+	.cell {
+		flex:1 0 100%;
+	}
+}
+
+/*Tablets*/
+
+@media (min-device-width : 751px) 
+and (max-device-width : 1150px) { 
+	.cell {
+		flex:1 0 50%;
+	}
+}
+
 
 
 
