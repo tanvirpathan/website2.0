@@ -55,13 +55,14 @@ html, body, h1, #something, #wrapper, #somethingelse {
 }
 
 #experiences {
-	min-height: 100%;
+	height: 970px;
 	width: 100%;
 	background-color: #212121;
 	margin: 0;
 /*	text-align: center;
 */	z-index: 100;
 }
+
 .experiences-text {
 
   	text-align: left;
@@ -105,18 +106,25 @@ html, body, h1, #something, #wrapper, #somethingelse {
 strong {
 	color: #7fc930
 }
+.cell-container {
+	padding-top: 70px;
+	
+
+}
 .cell-flex {
 	display: flex; 
 	width: 100%; 
-	height: 400px;  
+	height: 400px;
 	flex-wrap: wrap; 
-	background-color: #212121;
+
+	/*background-color: #212121;*/
 }
 .cell {
 	flex: 1 0 33%; 
 	height: 100%; 
 	padding-bottom: 30px; 
-	background-color: #212121;
+
+	/*background-color: #212121;*/
 	
 
 }
@@ -182,40 +190,57 @@ strong {
 	z-index: -100;
 	
 }
+ 
 
-/*Phones*/
-@media only screen 
-and (min-device-width : 500px) 
-and (max-device-width : 750px) 
-and (orientation : landscape) { 
+@media (max-width : 1151px) { 
+	.cell {
+		flex:1 0 50%;
+	}
+	#about-me-text {
+		font-size: 35px;
+		line-height: 40px;
+	}
+	.cell-container {
+		padding-top: 100px;
+	}
+	#experiences {
+		height: 1400px;
+	}
+
+	
+}
+
+@media (max-device-width : 750px) { 
+	.cell {
+		flex:1 0 100%;
+	}
 	#about-me-text {
 		font-size: 25px;
 		line-height: 30px;
 	}
-	.cell {
-		flex:1 0 100%;
+	.cell-container {
+		padding-top: 160px;
 	}
+	#experiences {
+		height: 2750px;
+	}
+		
 }
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 420px) 
-and (orientation : portrait) { 
+@media (max-width : 750px) { 
 	.cell {
 		flex:1 0 100%;
 	}
-	.experiences-text {
+	#about-me-text {
 		font-size: 25px;
+		line-height: 30px;
 	}
-}
-
-/*Tablets*/
-
-@media (min-device-width : 751px) 
-and (max-device-width : 1150px) { 
-	.cell {
-		flex:1 0 50%;
+	.cell-container {
+		padding-top: 140px;
 	}
+	#experiences {
+		height: 2750px;
+	}
+		
 }
 
 
